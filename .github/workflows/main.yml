@@ -41,7 +41,7 @@ jobs:
                     "text": "Approve"
                   },
                   "style": "primary",
-                  "value": "approve_pr"
+                  "url": "${{ github.event.pull_request.html_url }}"
                 },
                 {
                   "type": "button",
@@ -50,7 +50,7 @@ jobs:
                     "text": "Reject"
                   },
                   "style": "danger",
-                  "value": "reject_pr"
+                  "url": "${{ github.event.pull_request.html_url }}"
                 },
                 {
                   "type": "button",
