@@ -51,15 +51,6 @@ jobs:
                   },
                   "style": "danger",
                   "url": "${{ github.event.pull_request.html_url }}"
-                },
-                {
-                  "type": "button",
-                  "text": {
-                    "type": "plain_text",
-                    "text": "View Pull Request"
-                  },
-                  "url": "${{ github.event.pull_request.html_url }}",
-                  "style": "primary"
                 }
               ]
             }
