@@ -32,11 +32,27 @@ jobs:
               }
             },
             {
-              "type": "section",
-              "text": {
-                "type": "mrkdwn",
-                "text": "<${{ github.event.pull_request.html_url }}|View Pull Request>"
-              }
+              "type": "actions",
+              "elements": [
+                {
+                  "type": "button",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "Accept"
+                  },
+                  "style": "primary",
+                  "value": "accept_pr"
+                },
+                {
+                  "type": "button",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "Reject"
+                  },
+                  "style": "danger",
+                  "value": "reject_pr"
+                }
+              ]
             }
           ]
         }' $SLACK_WEBHOOK_URL
